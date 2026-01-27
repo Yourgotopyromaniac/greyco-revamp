@@ -30,10 +30,12 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-base font-medium font-mono-custom text-greyco-primary-100"
+            className="text-base text-center font-medium font-mono-custom text-greyco-primary-100"
           >
-            Grey Co-Lab is more than just a workspace; it’s a vibrant ecosystem
-            built on three core pillars:
+            We offer a range of flexible and affordable pricing plans to suit
+            your needs. All our plans include high-speed internet, a comfortable
+            and air-conditioned environment, and access to our supportive
+            on-site staff.
           </motion.p>
         </div>
         <div className="flex items-center justify-center w-full">

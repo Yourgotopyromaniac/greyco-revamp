@@ -84,7 +84,6 @@ const Intro: React.FC = () => {
               </span>
             </motion.div>
           </motion.div>
-
           <motion.div
             className="w-full flex lg:flex-row flex-col items-center justify-between gap-8"
             initial="hidden"
@@ -106,7 +105,7 @@ const Intro: React.FC = () => {
               className="lg:w-1/2 w-full flex items-center justify-center lg:justify-end"
               variants={stepRightVariants}
             >
-              <div className="w-[80%] flex flex-col gap-6 items-center lg:items-start justify-center">
+              <div className="lg:w-[80%] w-full flex flex-col gap-6 items-center lg:items-start justify-center">
                 <motion.div
                   className="size-20 rounded-full bg-greyco-secondary flex items-center justify-center"
                   variants={iconVariants}
@@ -129,7 +128,6 @@ const Intro: React.FC = () => {
               </div>
             </motion.div>
           </motion.div>
-
           <motion.div
             className="w-full flex lg:flex-row-reverse flex-col items-center justify-between gap-8"
             initial="hidden"
@@ -156,7 +154,7 @@ const Intro: React.FC = () => {
               className="lg:w-1/2 w-full flex items-center lg:justify-start justify-center"
               variants={stepLeftVariants}
             >
-              <div className="w-[80%] flex flex-col gap-6 lg:items-start items-center justify-center">
+              <div className="lg:w-[80%] w-full flex flex-col gap-6 lg:items-start items-center justify-center">
                 <motion.div
                   className="size-20 rounded-full bg-greyco-secondary flex items-center justify-center"
                   variants={iconVariants}
@@ -178,7 +176,6 @@ const Intro: React.FC = () => {
               </div>
             </motion.div>
           </motion.div>
-
           <motion.div
             className="w-full flex lg:flex-row flex-col items-center justify-between gap-8"
             initial="hidden"
@@ -205,7 +202,7 @@ const Intro: React.FC = () => {
               className="lg:w-1/2 w-full flex items-center justify-center lg:justify-end"
               variants={stepRightVariants}
             >
-              <div className="w-[80%] flex flex-col gap-6 items-center lg:items-start justify-center">
+              <div className="lg:w-[80%] w-full flex flex-col gap-6 items-center lg:items-start justify-center">
                 <motion.div
                   className="size-20 rounded-full bg-greyco-secondary flex items-center justify-center"
                   variants={iconVariants}
@@ -226,6 +223,50 @@ const Intro: React.FC = () => {
               </div>
             </motion.div>
           </motion.div>
+          <div className="w-full flex flex-col justify-center gap-4 items-start">
+            <motion.h1
+              className="text-white lg:text-5xl text-[32px] font-bold"
+              variants={headerVariants}
+            >
+              Our Community
+            </motion.h1>
+            <h1 className="text-[#BDBDBD] text-center lg:text-start text-[22px] font-normal">
+              Our Community At Grey Co-Lab, we believe in the power of
+              community. We foster a collaborative and inspiring environment
+              where you can connect with like-minded individuals, share ideas,
+              and grow together. Join us for our regular community events,
+              including: • Social Hour: Unwind and network with fellow members
+              in a relaxed and friendly atmosphere. • Community Hangouts:
+              Participate in engaging discussions, workshops, and collaborative
+              projects.
+            </h1>
+
+            <ul className="text-[#BDBDBD] flex flex-col items-start list-disc list-inside text-[22px] font-normal">
+              <li>
+                Social Hour: Unwind and network with fellow members in a relaxed
+                and friendly atmosphere.
+              </li>
+              <li>
+                Community Hangouts: Participate in engaging discussions,
+                workshops, and collaborative projects.
+              </li>
+            </ul>
+          </div>
+
+          <div className="w-full flex flex-col justify-center gap-4 items-start">
+            <motion.h1
+              className="text-white lg:text-5xl text-[32px] font-bold"
+              variants={headerVariants}
+            >
+              Creator's Lab
+            </motion.h1>
+            <h1 className="text-[#BDBDBD] text-center lg:text-start text-[22px] font-normal">
+              Our Creator's Lab is a dedicated space for content creators,
+              providing the tools and environment you need to bring your ideas
+              to life. More details on equipment and booking will be available
+              soon.
+            </h1>
+          </div>
         </div>
       </div>
     </SectionContainer>

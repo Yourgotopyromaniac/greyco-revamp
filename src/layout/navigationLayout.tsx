@@ -44,7 +44,7 @@ const NavigationLayout = () => {
   return (
     <div
       ref={navBarRef}
-      className={`w-full flex flex-col fixed top-0 left-0 bg-transparent backdrop-blur-[10px] z-[200] text-white`}
+      className={`w-full flex flex-col fixed top-0 left-0 z-[200] transition-all duration-300 text-white ${isMobileOpen ? "bg-greyco-secondary backdrop-blur-0" : "bg-transparent backdrop-blur-[10px]"}`}
     >
       <div className="flex h-[8vh] relative z-[100] w-full items-center justify-center my-4">
         <div className="w-full flex items-center justify-between relative">
@@ -52,7 +52,7 @@ const NavigationLayout = () => {
             <img
               src="/img/logo.png"
               width={300}
-              className="absolute lg:left-16 left-4 top-1/2 -translate-y-1/2"
+              className="absolute lg:left-16 left-[-3rem] top-1/2 -translate-y-1/2"
             />
           </a>
           <div className="lg:flex hidden gap-6 justify-center items-center">
@@ -115,32 +115,30 @@ const NavigationLayout = () => {
         style={{
           top: navBarHeight,
         }}
-        className={`bg-[#040B17D9] backdrop-blur-[20px] z-[100] px-4 py-10 -mt-1 lg:hidden flex flex-col items-center justify-center gap-4 h-auto transition-all duration-300 w-full absolute left-1/2 -translate-x-1/2 ${
+        className={`bg-greyco-secondary z-[100] px-4 py-10 -mt-1 lg:hidden flex flex-col items-center justify-center gap-4 h-auto transition-all duration-300 w-full absolute left-1/2 -translate-x-1/2 ${
           isMobileOpen ? "translate-y-0" : "-translate-y-[200%]"
         }`}
       >
         <div className="flex flex-col w-full items-center gap-8">
           <a
             href="/#mission"
-            className="no-underline font-mono-custom text-greyco-primary-100 hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
+            className="no-underline font-mono-custom text-white hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
           >
             About us
           </a>
           <a
             href="/#pricing"
-            className="no-underline font-mono-custom text-greyco-primary-100 hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
+            className="no-underline font-mono-custom text-white hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
           >
             Pricing
           </a>
-
           <a
             href="https://api.whatsapp.com/send?phone=2347070442824"
-            className="w-full"
             aria-label="Join Grey-Co"
           >
             <Button
               ctaText="Join"
-              className="bg-greyco-primary-100 py-2 hover:bg-greyco-primary-100/80 px-4 rounded-full text-[15px] font-medium text-white absolute right-16 top-1/2 -translate-y-1/2 transition-all duration-300"
+              className="bg-greyco-primary-100 py-2 hover:bg-greyco-primary-100/80 px-4 rounded-full text-[15px] font-medium text-white transition-all duration-300"
             />
           </a>
         </div>
@@ -151,7 +149,7 @@ const NavigationLayout = () => {
           style={{
             top: mobileMenuHeight,
           }}
-          className="absolute left-0 w-screen h-screen bg-black/70 z-[90]"
+          className="absolute left-0 w-screen h-screen bg-transparent backdrop-blur-[10px] z-[90]"
         ></div>
       )}
     </div>
