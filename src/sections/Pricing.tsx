@@ -9,8 +9,10 @@ const PricingSection = () => {
     >
       <video
         src="/img/bg-video.mp4"
-        autoPlay={true}
-        loop={true}
+        autoPlay
+        loop
+        muted
+        playsInline
         className="absolute w-full h-full top-0 left-0 z-0 object-cover"
       />
       <div className="flex relative z-20 flex-col gap-16 items-center justify-between w-[90%] lg:w-[80%] py-20">

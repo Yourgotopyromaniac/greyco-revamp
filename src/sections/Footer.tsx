@@ -7,8 +7,10 @@ const Footer = () => {
       <div className="flex relative items-center bg-[#fffef1] text-[#1b1b1b] justify-center w-full py-16">
         <video
           src="/img/bg-video.mp4"
-          autoPlay={true}
-          loop={true}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute w-full h-full top-0 left-0 z-0 object-cover"
         />
         <div className="w-full relative z-20 flex flex-col lg:items-center items-start gap-12 lg:px-24 px-6">

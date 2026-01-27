@@ -10,7 +10,7 @@ const Hero = () => {
     if (hasFlickered) return;
 
     const flickerSequence = [
-      { delay: 600, state: false, duration: 0 },
+      { delay: 800, state: false, duration: 0 },
       { delay: 300, state: true, duration: 100 },
       { delay: 150, state: false, duration: 200 },
       { delay: 250, state: true, duration: 120 },
@@ -62,8 +62,10 @@ const Hero = () => {
       <div className="w-full flex flex-col min-h-screen pb-20 items-end justify-center relative bg-[#fffef1]">
         <video
           src="/img/bg-video.mp4"
-          autoPlay={true}
-          loop={true}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute w-full h-full top-0 left-0 z-0 object-cover"
         />
         <div className="lg:w-[90%] z-10 w-full h-full flex lg:flex-row flex-col lg:gap-0 gap-12 justify-between relative items-center lg:mt-32 mt-32">
