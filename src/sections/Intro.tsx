@@ -116,7 +116,7 @@ const Intro: React.FC = () => {
                   <span className="text-white text-[28px] lg:text-[44px] text-center lg:text-start font-bold">
                     Co-working Spaces
                   </span>
-                  <span className="text-[#BDBDBD] font-mono-custom text-center lg:text-start text-[22px] font-normal">
+                  <span className="text-[#BDBDBD] font-mono-custom text-center lg:text-start text-base lg:text-[22px] font-normal">
                     Our flexible and fully-equipped workspaces are designed to
                     meet the needs of modern professionals. Whether you're a
                     freelancer, a remote worker, or part of a growing team, we
@@ -165,7 +165,7 @@ const Intro: React.FC = () => {
                   <span className="text-white text-[28px] lg:text-[44px] text-center lg:text-start font-bold">
                     Learning Platform
                   </span>
-                  <span className="text-[#BDBDBD] text-center lg:text-start text-[22px] font-normal">
+                  <span className="text-[#BDBDBD] font-mono-custom text-center lg:text-start text-base lg:text-[22px] font-normal">
                     Stay ahead of the curve with our curated selection of
                     digital economy courses and certifications. Our platform is
                     designed to help you acquire new skills, grow your
@@ -213,7 +213,7 @@ const Intro: React.FC = () => {
                   <span className="text-white text-[28px] lg:text-[44px] text-center lg:text-start font-bold">
                     Digital Marketplace
                   </span>
-                  <span className="text-[#BDBDBD] text-center lg:text-start text-[22px] font-normal">
+                  <span className="text-[#BDBDBD] font-mono-custom text-center lg:text-start text-base lg:text-[22px] font-normal">
                     We connect talented African freelancers with a trusted
                     network of global opportunities. Our marketplace is a
                     gateway for you to showcase your skills, find meaningful
@@ -230,7 +230,7 @@ const Intro: React.FC = () => {
             >
               Our Community
             </motion.h1>
-            <h1 className="text-[#BDBDBD] text-center lg:text-start text-[22px] font-normal">
+            <h1 className="text-[#BDBDBD] text-start text-base lg:text-[22px] font-normal">
               Our Community At Grey Co-Lab, we believe in the power of
               community. We foster a collaborative and inspiring environment
               where you can connect with like-minded individuals, share ideas,
@@ -241,7 +241,7 @@ const Intro: React.FC = () => {
               projects.
             </h1>
 
-            <ul className="text-[#BDBDBD] flex flex-col items-start list-disc list-inside text-[22px] font-normal">
+            <ul className="text-[#BDBDBD] flex flex-col items-start list-disc text-start list-inside text-base lg:text-[22px] font-normal">
               <li>
                 Social Hour: Unwind and network with fellow members in a relaxed
                 and friendly atmosphere.
@@ -260,7 +260,7 @@ const Intro: React.FC = () => {
             >
               Creator's Lab
             </motion.h1>
-            <h1 className="text-[#BDBDBD] text-center lg:text-start text-[22px] font-normal">
+            <h1 className="text-[#BDBDBD] text-start lg:text-[22px] text-base font-normal">
               Our Creator's Lab is a dedicated space for content creators,
               providing the tools and environment you need to bring your ideas
               to life. More details on equipment and booking will be available
