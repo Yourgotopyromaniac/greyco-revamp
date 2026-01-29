@@ -8,6 +8,7 @@ import PricingSection from "../sections/Pricing";
 import Mission from "../sections/Mission";
 import Contact from "../sections/Contact";
 import Community from "../sections/Community";
+import Banner from "../sections/Banner";
 
 const Home = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const Home = () => {
       <NavigationLayout />
       <div className="flex w-full flex-col items-center gap-0 justify-start">
         <Hero />
+        <Banner />
         <Mission />
         <Intro />
         <Community />

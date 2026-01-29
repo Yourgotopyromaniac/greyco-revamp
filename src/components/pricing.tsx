@@ -46,7 +46,7 @@ const Pricing = () => {
   const activePlan = pricingPlans.find((plan) => plan.id === activeTab);
 
   return (
-    <div className="w-1/2">
+    <div className="w-full lg:w-1/2">
       {/* Tab Buttons */}
       <div className="flex gap-2 mb-8 bg-[#1b1b1b] p-1 rounded-full lg:rounded-[16px] flex-wrap lg:flex-nowrap">
         {pricingPlans.map((plan) => (
@@ -99,9 +99,7 @@ const Pricing = () => {
           </div>
 
           <div className="space-y-3">
-            <h3 className="text-[#fffef1] font-semibold mb-4">
-              Features:
-            </h3>
+            <h3 className="text-[#fffef1] font-semibold mb-4">Features:</h3>
             {activePlan.features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -117,7 +115,9 @@ const Pricing = () => {
                       : "bg-[#f4b444]"
                   }`}
                 />
-                <p className="text-[#fffef1] font-mono-custom text-base">{feature}</p>
+                <p className="text-[#fffef1] font-mono-custom text-base">
+                  {feature}
+                </p>
               </motion.div>
             ))}
           </div>

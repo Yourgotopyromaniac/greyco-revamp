@@ -19,7 +19,7 @@ const missionVisionData = [
 const Mission = () => {
   return (
     <SectionContainer id="mission">
-      <div className="flex w-full items-center justify-center bg-greyco-secondary py-32">
+      <div className="flex w-full flex-col items-center justify-center gap-0 bg-greyco-secondary py-32">
         <div className="w-[90%] flex flex-col items-center justify-center gap-0">
           <div className="lg:w-[80%] w-full flex lg:flex-row flex-col items-stretch justify-between gap-6">
             {missionVisionData.map((item, index) => (
