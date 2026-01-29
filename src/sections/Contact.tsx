@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
 
   return (
     <SectionContainer id="how-it-works">
-      <div className="w-full h-full bg-[#fffef1] flex items-center justify-center">
+      <div className="w-full h-full bg-white flex items-center justify-center">
         <div className="lg:w-[80%] w-[90%] flex flex-col items-center text-center gap-20 py-20">
           <motion.div
             className="w-full flex flex-col items-center justify-center gap-4"
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
               Expert Support 24/7
             </motion.h1>
             <motion.div variants={headerVariants}>
-              <span className="text-base font-medium font-mono-custom text-[#3f3f3f]">
+              <span className="text-base font-medium text-[#3f3f3f]">
                 Contact us, our expert support team is available 24/7 to assist
                 you.
               </span>

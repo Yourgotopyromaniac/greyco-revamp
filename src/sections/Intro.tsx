@@ -78,7 +78,7 @@ const Intro: React.FC = () => {
               The Grey-Co Lab Ecosystem
             </motion.h1>
             <motion.div variants={headerVariants}>
-              <span className="text-sm font-medium font-mono-custom text-[#fffef1]">
+              <span className="text-base font-medium text-[#fffef1]">
                 Grey Co-Lab is more than just a workspace; it’s a vibrant
                 ecosystem built on three core pillars:
               </span>
@@ -223,50 +223,6 @@ const Intro: React.FC = () => {
               </div>
             </motion.div>
           </motion.div>
-          <div className="w-full flex flex-col justify-center gap-4 items-start">
-            <motion.h1
-              className="text-white lg:text-5xl text-[32px] font-bold"
-              variants={headerVariants}
-            >
-              Our Community
-            </motion.h1>
-            <h1 className="text-[#BDBDBD] text-start text-base lg:text-[22px] font-normal">
-              Our Community At Grey Co-Lab, we believe in the power of
-              community. We foster a collaborative and inspiring environment
-              where you can connect with like-minded individuals, share ideas,
-              and grow together. Join us for our regular community events,
-              including: • Social Hour: Unwind and network with fellow members
-              in a relaxed and friendly atmosphere. • Community Hangouts:
-              Participate in engaging discussions, workshops, and collaborative
-              projects.
-            </h1>
-
-            <ul className="text-[#BDBDBD] flex flex-col items-start list-disc text-start list-inside text-base lg:text-[22px] font-normal">
-              <li>
-                Social Hour: Unwind and network with fellow members in a relaxed
-                and friendly atmosphere.
-              </li>
-              <li>
-                Community Hangouts: Participate in engaging discussions,
-                workshops, and collaborative projects.
-              </li>
-            </ul>
-          </div>
-
-          <div className="w-full flex flex-col justify-center gap-4 items-start">
-            <motion.h1
-              className="text-white lg:text-5xl text-[32px] font-bold"
-              variants={headerVariants}
-            >
-              Creator's Lab
-            </motion.h1>
-            <h1 className="text-[#BDBDBD] text-start lg:text-[22px] text-base font-normal">
-              Our Creator's Lab is a dedicated space for content creators,
-              providing the tools and environment you need to bring your ideas
-              to life. More details on equipment and booking will be available
-              soon.
-            </h1>
-          </div>
         </div>
       </div>
     </SectionContainer>

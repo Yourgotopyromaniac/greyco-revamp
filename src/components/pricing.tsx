@@ -46,7 +46,7 @@ const Pricing = () => {
   const activePlan = pricingPlans.find((plan) => plan.id === activeTab);
 
   return (
-    <div className="w-full">
+    <div className="w-1/2">
       {/* Tab Buttons */}
       <div className="flex gap-2 mb-8 bg-[#1b1b1b] p-1 rounded-full lg:rounded-[16px] flex-wrap lg:flex-nowrap">
         {pricingPlans.map((plan) => (

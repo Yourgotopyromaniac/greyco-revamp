@@ -89,23 +89,10 @@ const Hero = () => {
               viewport={{ once: true }}
               //@ts-ignore
               variants={textVariants}
-              className="text-base font-mono-custom lg:text-start text-center text-greyco-primary-100 font-medium lg:text-[20px] text-[16px] leading-snug"
+              className="text-xl font-mono-custom lg:text-start text-center text-greyco-primary-100 font-medium lg:text-[20px] text-[16px] leading-snug"
             >
-              Africa's Hybrid Hub for Coworking, Digital Learning & Creative
-              Collaboration
-            </motion.h2>
-            <motion.h2
-              custom={2}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              //@ts-ignore
-              variants={textVariants}
-              className="text-2xl font-bold shadow-text"
-            >
-              <span className="text-greyco-primary">WORK</span>{" "}
-              <span className="text-[#ffff06]">LEARN</span>{" "}
-              <span className="text-white">EARN</span>
+              Africa's Hybrid Hub for Coworking, <br />
+              Digital Learning & Creative Collaboration
             </motion.h2>
           </div>
           <div className="relative lg:absolute lg:w-[70%] w-full lg:h-[110vh] h-full flex items-center justify-center right-0 top-0 -translate-y-0 lg:top-1/2 lg:-translate-y-1/2">

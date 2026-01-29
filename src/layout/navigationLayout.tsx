@@ -44,7 +44,7 @@ const NavigationLayout = () => {
   return (
     <div
       ref={navBarRef}
-      className={`w-full flex flex-col fixed top-0 left-0 z-[200] transition-all duration-300 text-white ${isMobileOpen ? "bg-greyco-secondary backdrop-blur-0" : "bg-transparent backdrop-blur-[10px]"}`}
+      className={`w-full flex flex-col fixed top-0 left-0 z-[200] transition-all duration-300 text-white ${isMobileOpen ? "bg-greyco-secondary" : "bg-[#ffffff]"}`}
     >
       <div className="flex h-[8vh] relative z-[100] w-full items-center justify-center my-4">
         <div className="w-full flex items-center justify-between relative">
@@ -59,7 +59,7 @@ const NavigationLayout = () => {
             <div className="flex flex-col items-center justify-start gap-2">
               <a
                 href="/#mission"
-                className="no-underline font-mono-custom text-greyco-primary-100 hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
+                className="no-underline text-greyco-primary-100 hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
               >
                 About us
               </a>
@@ -68,7 +68,7 @@ const NavigationLayout = () => {
             <div className="flex flex-col items-center justify-start gap-2">
               <a
                 href="/#pricing"
-                className="no-underline font-mono-custom text-greyco-primary-100 hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
+                className="no-underline text-greyco-primary-100 hover:text-greyco-primary-100 font-medium text-sm transition-all duration-300"
               >
                 Pricing
               </a>

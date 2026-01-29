@@ -7,6 +7,7 @@ import Intro from "../sections/Intro";
 import PricingSection from "../sections/Pricing";
 import Mission from "../sections/Mission";
 import Contact from "../sections/Contact";
+import Community from "../sections/Community";
 
 const Home = () => {
   useEffect(() => {
@@ -42,6 +43,7 @@ const Home = () => {
         <Hero />
         <Mission />
         <Intro />
+        <Community />
         <PricingSection />
         <Contact />
         <Footer />
