@@ -49,10 +49,10 @@ const Community = () => {
 
   return (
     <SectionContainer>
-      <div className="w-full h-full bg-greyco-secondary flex flex-col items-center justify-center p-4">
+      <div className="w-full h-full bg-greyco-secondary flex flex-col items-center justify-center gap-16 p-4 py-16">
         {" "}
         <motion.div
-          className="w-full flex lg:flex-row-reverse flex-col items-center justify-between gap-8"
+          className="w-full flex lg:flex-row-reverse flex-col items-center justify-between gap-4 lg:gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -72,7 +72,7 @@ const Community = () => {
             className="lg:w-1/2 w-full flex items-center justify-center lg:justify-end"
             variants={stepLeftVariants}
           >
-            <div className="lg:w-[80%] w-full flex flex-col gap-6 items-center lg:items-start justify-center">
+            <div className="lg:w-[80%] w-[90%] flex flex-col gap-6 items-start justify-center">
               <motion.h1
                 className="text-white lg:text-5xl text-[32px] font-bold"
                 variants={headerVariants}
@@ -101,7 +101,7 @@ const Community = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="w-full flex lg:flex-row flex-col items-center justify-between gap-8"
+          className="w-full flex lg:flex-row flex-col items-center justify-between gap-4 lg:gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -121,7 +121,7 @@ const Community = () => {
             className="lg:w-1/2 w-full flex items-center justify-center lg:justify-start"
             variants={stepRightVariants}
           >
-            <div className="lg:w-[80%] w-full flex flex-col gap-6 items-center lg:items-start justify-center">
+            <div className="lg:w-[80%] w-[90%] flex flex-col gap-6 items-start justify-center">
               <motion.h1
                 className="text-white lg:text-5xl text-[32px] font-bold"
                 variants={headerVariants}
